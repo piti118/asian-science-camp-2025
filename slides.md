@@ -158,7 +158,7 @@ glowSeed: 123
 image: /lab.png
 ---
 
-# What did we do/learn
+# How did we learn?
 <v-clicks>
 
 - Problem sets
@@ -330,15 +330,6 @@ glowSeed: 1234
 # Secret
 ## There is no real "direct major". {v-click}
 
-<style>
-.slidev-vclick-hidden{
-  filter: blur(20px);
-}
-
-.slidev-vclick-target {
-  transition: opacity 500ms ease, filter 500ms ease;
-}
-</style>
 
 ---
 layout: image-right
@@ -352,6 +343,31 @@ image: /pcr.png
   - If anyone in the pool is positive, the tube is positive, and we will retest them individually.
   - If the tube is negative, everyone is negative.
 - How many people should we put in a tube?
+
+---
+glowSeed: 9393939
+---
+<div v-full>
+
+```mermaid
+flowchart TD
+  A1[Sample] -->|Combine| B[Pooling Test]
+  A2[Sample] -->|Combine| B[Pooling Test]
+  A3[Sample] -->|Combine| B[Pooling Test]
+  A4[Sample] -->|Combine| B[Pooling Test]
+  A5[Sample] -->|Combine| B[Pooling Test]
+  A6[Sample] -->|Combine| B[Pooling Test]
+  B -->|Negative| C[All Negative - No Retest]
+  B -->|Positive| D[Retest Individually - Total n times]
+  D -->|Retest| E1[Sample]
+  D -->|Retest| E2[Sample]
+  D -->|Retest| E3[Sample]
+  D -->|Retest| E4[Sample]
+  D -->|Retest| E5[Sample]
+  D -->|Retest| E6[Sample]
+```
+
+</div>
 
 ---
 layout: image-left
@@ -369,23 +385,16 @@ glowSeed: 9999
 - But we can solve the problem.
   - With our first principle approach.
 
+
 ---
 glowSeed: 239444
-layout: two-cols
+layout: center
 ---
 # It's not that hard.
 - $n$ people in total.
 - Each tube has $m$ samples.
 - Each person has probability $p$ of being positive.
 - We know that the major effect has to do with these three numbers.
-
-::right::
-```mermaid
-graph TD
-  A[n Samples] -->|Combine| B[Pooling Test]
-  B -->|Negative| C[All Negative - No Retest]
-  B -->|Positive| D[Retest Individually -- Total n times]
-```
 
 ---
 
@@ -463,12 +472,17 @@ glowSeed: 777777
 
 - Suppose you work at a logistics company. 📦
 - Feels like you're spending too much on tires. 💸
+
+<v-click>
+
 - What do you do? 🤔
   - Spend more money to solve the problem? → Vendor says so. 🛍️
 - You have a set of data (pressure, tire life). Can you "predict" the lifetime of a tire given its pressure/brand? 🔮📊
   - Match it with a known problem → Regression. 📈
   - Actually understand the problem → It's a random process. 🎲
 - What if the tire runs at different pressures all the time? 🤷‍♂️
+
+</v-click>
 
 ---
 glowSeed: 66666
@@ -626,9 +640,9 @@ glowSeed: 12345673
 - Focus on those generalizable skills.
 - Keep Moving+Improving. The world changes rapidly.
 
-
 ---
 layout: fact
+glowSeed: 12345678343
 ---
 
 # Questions? 💬
