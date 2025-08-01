@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright
-        run: npx playwright install --with-deps
+        run: npm i -D playwright-chromium
 
       - name: Build with Slidev
         run: npm run build
