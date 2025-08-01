@@ -390,6 +390,7 @@ glowSeed: 9999
 glowSeed: 239444
 layout: center
 ---
+
 # It's not that hard.
 - $n$ people in total.
 - Each tube has $m$ samples.
@@ -422,6 +423,7 @@ $$
 - Number of PCR tests is a function of group size $m$.
 
 </v-after>
+
 ---
 layout: center
 glowSeed: 12345633
@@ -601,6 +603,7 @@ glowSeed: 639202
 <v-clicks>
 
 - ## Adapt or Die.
+  - Expand your horizon, just in case.
   - If we don't disrupt ourselves, someone else will.
 - ## Programming.
   - Most real-world problems are not grounded spherical conductors.
