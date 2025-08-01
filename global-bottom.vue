@@ -33,8 +33,8 @@ export type Distribution =
 
 const formatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
 const distribution = computed(() => (formatter.value.glow || 'full') as Distribution)
-const opacity = computed<number>(() => +(formatter.value.glowOpacity ?? 0.4))
-const hue = computed<number>(() => +(formatter.value.glowHue || 45))
+const opacity = computed<number>(() => +(formatter.value.glowOpacity ?? 0.5))
+const hue = computed<number>(() => +(formatter.value.glowHue || 50))
 const seed = computed<string>(() => (formatter.value.glowSeed === 'false' || formatter.value.glowSeed === false)
   ? Date.now().toString()
   : formatter.value.glowSeed || 'default',
@@ -153,11 +153,11 @@ const poly3 = usePloy(3)
   <div>
     <div
       class="bg transform-gpu overflow-hidden pointer-events-none"
-      :style="{ filter: `blur(70px) hue-rotate(${hue}deg)` }"
+      :style="{ filter: `blur(50px) hue-rotate(${hue}deg)` }"
       aria-hidden="true"
     >
       <div
-        class="clip bg-gradient-to-r from-[#110000] to-[#aa0000]"
+        class="clip bg-gradient-to-r from-[#aa1111] to-[#ff0000]"
       />
       <div
         class="clip bg-gradient-to-l from-[#18549a] to-[#12238b]"

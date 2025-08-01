@@ -3,14 +3,8 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://images.unsplash.com/photo-1465101046530-73398c7f28ca
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+title: Where Science 🔬 Can Take You
 
 # https://sli.dev/features/drawing
 drawings:
@@ -25,16 +19,15 @@ seoMeta:
   # or generate one from the first slide if not found.
   ogImage: auto
   # ogImage: https://cover.sli.dev
-layout: cover
+layout: intro
 ---
 
 # Where Science 🔬 Can Take You
-
-<div>Piti Ongmongkolkul</div>
+Piti Ongmongkolkul
 
 ---
 layout: fact
-glowSeed: 2ddd
+glowSeed: 2ddddd
 ---
 
 # What to do after you have a bachelor degree 🎓 in science?
@@ -54,19 +47,36 @@ glowSeed: 10
 <img src="/non_academia_percentage.png">
 
 ---
-layout: image-right
-image: https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80
+layout: two-cols
+image: /office_work.png
 glowSeed: 2002
 ---
 
 # Non-Academic Jobs
-- Huge Market. Competition for our "skill set" is relatively low.
-  - Finance, Data Scientist, Engineer, Quality Control, Insurance, IT, Marketing, Business Analyst, SME Owner, HR, Business Consult, High School Teacher, Health Care, Military etc.
-- Still get to do cool stuff. Might not be so cutting edge.
-- Higher pay.
-- You get to pick the location.
-- Some hurdles that you need to get through.
-- It's actually the true mainstream. Most of you will do this.
+
+- 🌍 Huge Market. Competition for our "skill set" is relatively low.
+- 🤩 Still get to do cool stuff. Might not be so cutting edge.
+- 💵 Higher pay.
+- 📍 You get to pick the location.
+
+::right::
+
+- 💰 Finance
+- 📊 Data Scientist
+- 🛠️ Engineer
+- ✅ Quality Control
+- 🛡️ Insurance
+- 💻 IT
+- 📈 Marketing
+- 📋 Business Analyst
+- 🏪 SME Owner
+- 🧑‍💼 HR
+- 💼 Business Consult
+- 🎓 High School Teacher
+- 🏥 Health Care
+- 🪖 Military etc.
+
+
 
 
 ---
@@ -76,10 +86,10 @@ image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dry
 ---
 
 # Jobs that Does not exists yet
+
 - Calculator/Computer was an actual job title.
 - Youtuber/Influencer does not exist 20 years ago.
 - DevOp was not even a word 20 years ago. 
-
 - Some will keep getting renamed with the same underlying skill set.
   - Operation Research → Financial Engineer → Data Scientist → Some other fancy names
   - DBA → Data Engineer → ML Engineer → AI Engineer -> ...
@@ -87,16 +97,19 @@ image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dry
 ---
 layout: center
 glowSeed: 223
+transition: view-transition
 ---
 # Why did we study Physics/Math/Biology etc.?
-## Because it's easy...right?
+# Because it's easy...right? {.view-transition-easy}
 
 ---
 layout: center
 glowSeed: 20002
+transition: view-transition
 ---
 
-# Because it has a lot of applications?
+# Because it has a lot of applications? {.view-transition-easy}
+
 - Physics: Engineering, Technology, Medical Imaging
 - Math: Data Science, Cryptography, Finance
 - Biology: Medicine, Environmental Science, Biotechnology
@@ -104,9 +117,14 @@ glowSeed: 20002
 ---
 layout: image-right
 image: /dr_stone.png
+transition: view-transition
+glowSeed: 1234
 ---
 
-# More Romantic Reasons
+# Because of some romantic reasons? {.view-transition-easy}
+
+<v-clicks>
+
 - Discovering the Law of Nature.
 - Make the world a better place.
 - One of Stephen Hawking book: eg. Brief History of Time.
@@ -115,6 +133,8 @@ image: /dr_stone.png
 - Challenge.
 - Fun. Thanks to your high school teachers.
 
+</v-clicks >
+
 ---
 layout: image-left
 glowSeed: 123
@@ -122,45 +142,76 @@ image: /lab.png
 ---
 
 # What did we do/learn
+<v-clicks>
+
 - Problem sets
 - Lab Reports
 - Presentations
 
+</v-clicks>
+
 ---
-layout: full
+glowSeed: 3922
 ---
 
 # What we really learn?
-- Fearless to the unknown.
-  - We approach really difficult problems on daily basis.
-  - We learn to live with the feeling of being stupid/lost.
-- Spotting Patterns and Correlations
-  - Gather around all the fundamental laws to solve the problems.
-  - We formulate fundamental mechanism from the patterns we found.
-- Quantitative reasoning
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 10px;">
+  <div v-click class="element">
+  
+  ## Fearless of the unknown
+  - We approach really difficult problems on a daily basis.
+  - We learn to live with the feeling of being stupid or lost.
+  
+  </div>
+  <div v-click class="element">
+    
+  ## Spotting patterns and correlations
+  - Gather all the fundamental laws to solve problems.
+  - Formulate fundamental mechanisms from the patterns we find.
+  
+  </div>
+  <div v-click class="element">
+
+  ## Quantitative reasoning
   - Call it what you want: Math, Statistics, Data Science, etc.
-  - Formulate problem in quantitative ways.
-- Communication skills
-  - Teaching your friend on the homework.
+  - Formulate problems in quantitative ways.
+  
+  </div>
+  <div v-click class="element">
+
+  ## Communication skills
+  - Teaching your friends the homework.
   - Asking the right questions.
-  - In fact, large part of managerial work is communication.
+  - In fact, a large part of managerial work is communication.
+  
+  </div>
+</div>
 
 ---
+layout: center
 glowSeed: 2234
 ---
+
 # Our Very Unique Offer: First Principle approach.
 
 - Rich People
   - Problem? → Money → Fix
 - Other People
   - Problem? → Look up known solution → Fix.
-- Physicist's Approach
+- First Principle's Approach
   - Problem? → Look up known solution/Figure out the underlying mechanism → Fix
   - Bonus: Figure out the underlying mechanism → Abusable.
-- Among the best in the industry in solving the unknown problem.
-- Most of the problem in the industry is not by the book even if it's not cutting edge.
-  - Last time your see spherical conductor?
-  - New constraint etc. Modified objective etc.
+
+---
+layout: center
+---
+
+# Science Major
+- Among the best in the industry at solving unknown problems.
+- Most problems in the industry are not by the book, even if they aren't cutting-edge.
+  - When was the last time you saw a spherical conductor?
+  - New constraints, modified objectives, etc.
 - We are permanently wired to think this way.
   - Once a scientist, always a scientist.
 
@@ -172,10 +223,10 @@ layout: fact
 Yes, they do. Sort of.
 
 ---
-layout: center
+layout: image
 ---
 
-<img src="/field_of_employment.png" style="height:100vh">
+<img src="/field_of_employment.png" style="height:100%; margin: auto;">
 
 <v-drag pos="229,126,427,43"><h2>Hired to solve technical problems.</h2></v-drag>
 
@@ -186,7 +237,6 @@ h2 {
 }
 </style>
 
-
 ---
 layout: fact
 glowSeed: 1231232
@@ -195,26 +245,47 @@ glowSeed: 1231232
 # Hurdles 🚧
 Given that the system is not perfect. 🤷‍♂️💡
 
+
 ---
 glowSeed: 55522
 ---
 
-# Adjustment
-- Be Open
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 10px;">
+  <div v-click class="element">
+  
+  ## Be Open
   - Academia isn't the only path. Even in academia, changing field is OK.
   - There is nothing wrong with job not directly related to your degree.
-- Job Listing
+
+  </div>
+
+  <div v-click class="element">
+
+  ## Job Listing
   - Most don't list physics as the major they want. But, apply anyway if you seem to be able to contribute.
   - Most people that hire physicists are either physicists themselves or word of mouth.
-- Learn how to present yourself
+
+  </div>
+
+  <div v-click class="element">
+
+  ## Present yourself
   - Yes you feel stupid all the time. But, you are not stupid.
   - Show it in your Resume/CV/Interview that you have unique offer.
-  - Be smart but not smartass. Eg. Sheldon Cooper.
-- Communication is key
-  - Jack of all trades, master of most of them.
-  - Yes, you are probably gonna be smarter than most of your colleagues.
-  - Don't brush them off as lower intelligence. They possess some other skills you don't.
+  - Be smart but not smartass.
+
+  </div>
+
+  <div v-click class="element">
+
+  ## Communication is key
+  - Emphathy.
+  - Your know something that they don't.
+  - They don't know something you do.
   - You still need to be able to explain to them to get them up on the same speed/buy your argument.
+
+  </div>
+</div>
 
 ---
 layout: fact
@@ -227,6 +298,7 @@ Why not just study a more "direct" major?
 layout: center
 glowSeed: 3333
 ---
+
 # But I thought that XXX job is for YYY major?
 
 - ## Jobs require skills not degree. 🛠️🎓
@@ -239,21 +311,30 @@ glowSeed: 1234
 ---
 
 # Secret
-## There is no real "direct major".
+## There is no real "direct major". {v-click}
+
+<style>
+.slidev-vclick-hidden{
+  filter: blur(20px);
+}
+
+.slidev-vclick-target {
+  transition: opacity 500ms ease, filter 500ms ease;
+}
+</style>
 
 ---
 layout: image-right
 image: /pcr.png
 ---
+
 # Late night during the covid pandemic
-- RT-PCR are quite expensive. 
-- Positive proportion is typically very low. Most are gonna be negative.
+- RT-PCR were quite expensive early on. 
+- Positive proportion was typically very low. Most were gonna be negative.
 - Pooling (put multiple people in the same tube) might save costs.
-  - If any one in the pool is positive, the tube and positive and we will retest them individually.
+  - If anyone in the pool is positive, the tube is positive, and we will retest them individually.
   - If the tube is negative, everyone is negative.
 - How many people should we put in a tube?
-- Question was asked around 10pm…
-- Anyone trained to answer this?
 
 ---
 layout: image-left
@@ -261,7 +342,7 @@ image: /accelerator.png
 glowSeed: 9999
 ---
 
-# Well...
+# Looking at myself.
 - Problem involves PCR. He is not a biologist.
 - PCR has test tubes and a bunch of chemicals. He is not a chemist.
 - It has to do with probability. He is not a statistician.
@@ -290,22 +371,24 @@ layout: center
 glowSeed: 777777
 ---
 
-# Tire Reliability Problem
+# Tire Reliability Problem 🚛🛞
 
-- Suppose you work at a logistic company.
-- Felt like you spent too much on tires.
-- What do you do?
-- Spend more money to solve problem. →  Vendor Said so
-- You have a set of (pressure, tire life). Can you "predict" life time for a tire with given pressure/brand?
-- Match it with a known problem →  Regression
-- Actually Understand the Problem →  It's a random process.
-- What if the tire runs at different pressure all the time?
+- Suppose you work at a logistics company. 📦
+- Feels like you're spending too much on tires. 💸
+- What do you do? 🤔
+  - Spend more money to solve the problem? → Vendor says so. 🛍️
+- You have a set of data (pressure, tire life). Can you "predict" the lifetime of a tire given its pressure/brand? 🔮📊
+  - Match it with a known problem → Regression. 📈
+  - Actually understand the problem → It's a random process. 🎲
+- What if the tire runs at different pressures all the time? 🤷‍♂️
 
 ---
 glowSeed: 66666
 ---
 
-# Why not a direct major?
+# Hard Truth
+<v-clicks>
+
 - Degree name != Skill set name
   - If we change our major name to Quantitative Analysis with concentration in Fundamental Laws of Nature, we would have less questions.
   - I got asked by executive every 2 years to change the program name to something more "applied".
@@ -313,12 +396,12 @@ glowSeed: 66666
   - PCR Pooling problem. Anyone trained specifically to solve this?
   - We did things in hard mode. (And we love feeling stupid all the time).
   - Learning typically takes less time. And we typically have a deeper understanding at the end.
-- Quick Learner vs Specialist
-  - The person who can solve wide range of problem with some learning curve. 
-  - Or the person who knows solve specific problem by the book quickly.
+- Quick Learner vs One Trick Specialist
   - Given rapidly changing world, the choice is clear.
 - The quantitative analysis skill will be needed for a foreseeable future.
-- Skills for using specific tools or performing specific tasks do not age well.
+  - Skills for using specific tools or performing specific tasks do not age well.
+
+</v-clicks>
 
 ---
 layout: image-left
@@ -351,23 +434,26 @@ glowSeed: 111122
 
 # What We have
 
-- Strong analytical skills
-- Basic programming knowledge
-- Good communication skills
+- Strong analytical skills 🧠
+- Basic programming knowledge 💻
+- Good communication skills 🗣️
 
 ::br 
 # What We don't
 
-- Working on a team
-- Project management
-- Work with customer
-- Managing Budget
+- Working on a team 🤝
+- Project management 📋
+- Work with customer 🛠️
+- Managing Budget 💰
 
 ---
+layout: two-cols-header
 glowSeed: 639202
 ---
 
 # Stuff that complements your science degree in non-academia world.
+
+::left::
 
 - ## Adapt or Die.
   - If we don't disrupt ourselves, someone else will.
@@ -375,7 +461,10 @@ glowSeed: 639202
   - Most real world problem are not grounded spherical conductor.
   - Get the computer to do it for you. (In general be lazy and use technology to your advantage)
 - ## English.
-- Most of human knowledge are transferred/kept in this language. If you are locked in Thai, you are screwed.
+  - Most of human knowledge are transferred/kept in this language. If you are locked in Thai, you are screwed.
+
+::right::
+
 - ## Teaching and Communication to non-scientists.
   - Our problem set are typically individual work.
   - Real world you work as a team with people of different skills.
@@ -399,7 +488,7 @@ glowSeed: 9933322
 
 
 ---
-layout: center
+layout: intro
 glowSeed: 12345673
 ---
 
@@ -407,6 +496,7 @@ glowSeed: 12345673
 - Focus on those generalizable skills.
 - Be open to non academia opportunities.
 - Keep Moving+Improving. The world changes rapidly.
+
 
 ---
 layout: fact
