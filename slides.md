@@ -47,19 +47,20 @@ glowSeed: 10
 <img src="/non_academia_percentage.png">
 
 ---
+layout: fact
+---
+
+# Publish X papers a year.
+Some of you will. <span v-mark.circle.green>Most</span> of you won't.
+
+---
 layout: two-cols
 image: /office_work.png
 glowSeed: 2002
 ---
 
 # Non-Academic Jobs
-
-- 🌍 Huge Market. Competition for our "skill set" is relatively low.
-- 🤩 Still get to do cool stuff. Might not be so cutting edge.
-- 💵 Higher pay.
-- 📍 You get to pick the location.
-
-::right::
+<v-click>
 
 - 💰 Finance
 - 📊 Data Scientist
@@ -76,6 +77,18 @@ glowSeed: 2002
 - 🏥 Health Care
 - 🪖 Military etc.
 
+</v-click>
+
+::right::
+
+<v-clicks>
+
+- 🌍 Huge Market. Competition for our "skill set" is relatively low.
+- 🤩 Still get to do cool stuff. Might not be so cutting edge.
+- 💵 Higher pay.
+- 📍 You get to pick the location.
+
+</v-clicks>
 
 
 
@@ -98,6 +111,7 @@ image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dry
 layout: center
 glowSeed: 223
 ---
+
 # Why did we study Physics/Math/Biology etc.?
 # Because it's easy...right? {.view-transition-easy}
 
@@ -350,6 +364,76 @@ glowSeed: 9999
   - With our first principle approach.
 
 ---
+glowSeed: 239444
+layout: two-cols
+---
+# It's not that hard.
+- $n$ people in total.
+- Each tube has $m$ samples.
+- Each person has probability $p$ of being positive.
+- We know that the major effect has to do with these three numbers.
+
+::right::
+```mermaid
+graph TD
+  A[n Samples] -->|Combine| B[Pooling Test]
+  B -->|Negative| C[All Negative - No Retest]
+  B -->|Positive| D[Retest Individually -- Total n times]
+```
+
+---
+
+# Let us reason
+
+$$
+\begin{align*}
+PCR &= \frac{n}{m} + m \times \text{\# group positive} \\
+E[PCR] &= E \left[ \frac{n}{m} \right] + m \times E\left[ \text{\# of group positive} \right]\\
+&= \frac{n}{m} + m \times E\left[ \text{\# of group positive} \right] \\
+&=  \frac{n}{m} + \underbrace{n \times (1- (1-p)^m)}_{n \times (1-P(\text{everyone negative}))} \\
+\end{align*}
+$$
+<div v-mark.circle.green>
+
+$$
+E[PCR] = \frac{n}{m} + n \times (1- (1-p)^m)
+$$
+</div>
+
+- Number of PCR tests is a function of group size $m$.
+
+---
+layout: center
+glowSeed: 12345633
+---
+
+<v-clicks>
+
+$$
+E[PCR] = \frac{n}{m} + n \times (1- (1-p)^m)
+$$
+This means all we need is to minimize this with respect to $m$.
+$$
+\frac{d}{dm}E[PCR] = 0
+$$
+Well differentiate exponential is quite annoying. Hello Taylor series.
+$$
+E[PCR] \approx \frac{n}{m} + n \times (1- (1-mp))
+$$
+$$
+\frac{d}{dm}E[PCR] = -\frac{n}{m^2} + n \times p = 0
+$$
+</v-clicks>
+
+<span v-click v-mark.circle.green>
+
+$$
+m = \sqrt{\frac{1}{p}}
+$$
+
+</span>
+
+---
 layout: fact
 glowSeed: 1232341
 ---
@@ -362,6 +446,7 @@ $\int^1_0 x^2 dx$
 Solve the Schrödinger equation for infinite square well.
 
 But you can still do it if you want to.
+You may not feel comfortable. I blame textbooks.
 
 ---
 layout: center
@@ -383,37 +468,79 @@ glowSeed: 777777
 glowSeed: 66666
 ---
 
-# Hard Truth
-<v-clicks>
+# The truth is...
 
-- Degree name != Skill set name
-  - If we change our major name to Quantitative Analysis with concentration in Fundamental Laws of Nature, we would have less questions.
-  - I got asked by executive every 2 years to change the program name to something more "applied".
-- Everyone will need to learn the new environment anyway.
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 10px;">
+  <div v-click class="element">
+  
+  ### Degree name VS Skill name
+
+  - Quantitative Analysis with concentration in Fundamental Laws of Nature, we would have less questions.
+  
+  </div>
+
+  <div v-click class="element">
+
+  ### Learner vs One Trick Specialist
+  - Don't put all your eggs in one basket.
+  - Given rapidly changing world, the choice is clear.
+
+  </div>
+
+  <div v-click class="element">
+
+  ### Everyone Relearns
+  
   - PCR Pooling problem. Anyone trained specifically to solve this?
   - We did things in hard mode. (And we love feeling stupid all the time).
-  - Learning typically takes less time. And we typically have a deeper understanding at the end.
-- Quick Learner vs One Trick Specialist
-  - Given rapidly changing world, the choice is clear.
-- The quantitative analysis skill will be needed for a foreseeable future.
+  
+  </div>
+
+  <div v-click class="element">
+
+  ## Quantitative Reasoning
+  - Needed for a foreseeable future.
   - Skills for using specific tools or performing specific tasks do not age well.
 
-</v-clicks>
+  </div>
+</div>
+
 
 ---
-layout: image-left
-image: /door.png
-glowSeed: 23232
+layout: fact
+glowSeed: 83232
 ---
 
-# So many choices what program should I choose?
+# OK, but... 
+## 🤖 AI is taking my jobs. 😱
 
-- All choices are bad actually. 😬
-- All choices are also good. 👍
-- Curriculum can only play catch up. Trend goes toward
-  - Analytic 📊
-  - Programming/Automation 🤖
-  - Communication 🗣️
+---
+layout: fact
+glowSeed: 9933322
+---
+
+# Were dinosaurs🦖 physically weak?
+
+<v-click>
+
+No one can adapt better than us.
+
+Analytic 📊
+Programming/Automation 🤖
+Communication 🗣️
+</v-click>
+
+---
+glowSeed: 92932
+layout: fact
+---
+
+# AI raises the floor not the ceiling. 🚀
+
+<span v-click>(Not yet anyway.)</span>
+
+Just don't be at the floor. 
+
 
 ---
 layout: fact
@@ -451,38 +578,36 @@ glowSeed: 639202
 # Stuff that complements your science degree in non-academia world.
 
 ::left::
+<v-clicks>
 
 - ## Adapt or Die.
   - If we don't disrupt ourselves, someone else will.
 - ## Programming.
-  - Most real world problem are not grounded spherical conductor.
-  - Get the computer to do it for you. (In general be lazy and use technology to your advantage)
+  - Most real-world problems are not grounded spherical conductors.
+  - Get the computer to do it for you. (In general, be lazy and use technology to your advantage.)
 - ## English.
-  - Most of human knowledge are transferred/kept in this language. If you are locked in Thai, you are screwed.
+  - Most human knowledge is transferred/kept in this language. If you are locked in Thai, you are at a disadvantage.
 
+</v-clicks>
 ::right::
 
-- ## Teaching and Communication to non-scientists.
-  - Our problem set are typically individual work.
-  - Real world you work as a team with people of different skills.
-- ## How business world operates.
-  - Try starting a business(online shop etc.), tutoring for money etc.
+<v-clicks>
+
+- ## Teaching and Communication to Non-Scientists.
+  - Our problem sets are typically individual work.
+  - In the real world, you work as a team with people of different skills.
+- ## How the Business World Operates.
+  - Try starting a business (online shop, etc.), tutoring for money, etc.
+  - Put more context on the problem.
+
+</v-clicks>
 
 ---
 layout: fact
-glowSeed: 83232
 ---
 
-# OK, but... 
-## 🤖 AI is taking my jobs. 😱
-
----
-layout: center
-glowSeed: 9933322
----
-
-# Were dinosaurs🦖 physically weak?
-
+# Don't wait for your school to teach you these skills.
+You can learn them on your own. It's now easier than ever.
 
 ---
 layout: intro
@@ -490,8 +615,9 @@ glowSeed: 12345673
 ---
 
 # Key Takeaways
-- Focus on those generalizable skills.
+
 - Be open to non academia opportunities.
+- Focus on those generalizable skills.
 - Keep Moving+Improving. The world changes rapidly.
 
 
@@ -500,3 +626,4 @@ layout: fact
 ---
 
 # Questions? 💬
+

@@ -22,7 +22,7 @@ div.col-right {
   border-radius: 10px;
   padding: 10px;
   border: 3px solid #ccc;
-  h2 {
+  h2, h3 {
     background: linear-gradient(90deg, #50505029, #00000066);
     border-radius: 5px;
     padding: 5px;

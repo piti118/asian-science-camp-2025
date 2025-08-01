@@ -157,7 +157,7 @@ const poly3 = usePloy(3)
       aria-hidden="true"
     >
       <div
-        class="clip bg-gradient-to-r from-[#aa1111] to-[#ff0000]"
+        class="clip bg-gradient-to-r from-[#110000] to-[#220000]"
       />
       <div
         class="clip bg-gradient-to-l from-[#18549a] to-[#12238b]"
