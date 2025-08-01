@@ -528,40 +528,6 @@ glowSeed: 66666
 </div>
 
 
----
-layout: fact
-glowSeed: 83232
----
-
-# OK, but... 
-## 🤖 AI is taking my jobs. 😱
-
----
-layout: fact
-glowSeed: 9933322
----
-
-# Were dinosaurs🦖 physically weak?
-
-<v-click>
-
-No one can adapt better than us.
-
-Analytic 📊
-Programming/Automation 🤖
-Communication 🗣️
-</v-click>
-
----
-glowSeed: 92932
-layout: fact
----
-
-# AI raises the floor not the ceiling. 🚀
-
-<span v-click>(Not yet anyway.)</span>
-
-Just don't be at the floor. 
 
 
 ---
@@ -612,6 +578,7 @@ glowSeed: 639202
   - Most human knowledge is transferred/kept in this language. If you are locked in Thai, you are at a disadvantage.
 
 </v-clicks>
+
 ::right::
 
 <v-clicks>
@@ -629,8 +596,48 @@ glowSeed: 639202
 layout: fact
 ---
 
-# Don't wait for your school to teach you these skills.
+# What do I do if my school doesn't teach this?
+
+<v-click>
+
 You can learn them on your own. It's now easier than ever.
+
+</v-click>
+
+---
+layout: fact
+glowSeed: 83232
+---
+
+# OK, Non-Academia is not so bad after all. But,...
+## 🤖 AI is taking my jobs. 😱
+
+---
+layout: fact
+glowSeed: 9933322
+---
+
+# Were dinosaurs🦖 physically weak?
+
+<v-click>
+
+No one can adapt better than us.
+
+Analytic 📊
+Programming/Automation 🤖
+Communication 🗣️
+</v-click>
+
+---
+glowSeed: 92932
+layout: fact
+---
+
+# AI raises the floor not the ceiling. 🚀
+
+<span v-click>(Not yet anyway.)</span>
+
+Just don't be at the floor. 
 
 ---
 layout: intro
