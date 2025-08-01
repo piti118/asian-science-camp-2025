@@ -646,9 +646,13 @@ glowSeed: 12345673
 
 # Key Takeaways
 
-- Be open to non academia opportunities.
-- Focus on those generalizable skills.
-- Keep Moving+Improving. The world changes rapidly.
+<v-clicks>
+
+- 🌟 Be open to non-academia opportunities.
+- 🛠️ Focus on those generalizable skills.
+- 🚀 Keep Moving+Improving. The world changes rapidly.
+
+</v-clicks>
 
 ---
 layout: fact
