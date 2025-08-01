@@ -605,6 +605,22 @@ You can learn them on your own. It's now easier than ever.
 </v-click>
 
 ---
+layout: intro
+glowSeed: 12345673
+---
+
+# Key Takeaways
+
+<v-clicks>
+
+- 🌟 Be open to non-academia opportunities.
+- 🛠️ Focus on those generalizable skills.
+- 🚀 Keep Moving+Improving. The world changes rapidly.
+
+</v-clicks>
+
+
+---
 layout: fact
 glowSeed: 83232
 ---
@@ -639,20 +655,6 @@ layout: fact
 
 Just don't be at the floor. 
 
----
-layout: intro
-glowSeed: 12345673
----
-
-# Key Takeaways
-
-<v-clicks>
-
-- 🌟 Be open to non-academia opportunities.
-- 🛠️ Focus on those generalizable skills.
-- 🚀 Keep Moving+Improving. The world changes rapidly.
-
-</v-clicks>
 
 ---
 layout: fact
