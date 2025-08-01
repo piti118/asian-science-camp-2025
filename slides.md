@@ -97,7 +97,6 @@ image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dry
 ---
 layout: center
 glowSeed: 223
-transition: view-transition
 ---
 # Why did we study Physics/Math/Biology etc.?
 # Because it's easy...right? {.view-transition-easy}
@@ -105,7 +104,6 @@ transition: view-transition
 ---
 layout: center
 glowSeed: 20002
-transition: view-transition
 ---
 
 # Because it has a lot of applications? {.view-transition-easy}
@@ -117,7 +115,6 @@ transition: view-transition
 ---
 layout: image-right
 image: /dr_stone.png
-transition: view-transition
 glowSeed: 1234
 ---
 
