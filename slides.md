@@ -46,12 +46,6 @@ glowSeed: 10
 
 <img src="/non_academia_percentage.png">
 
----
-layout: fact
----
-
-# Publish X papers a year.
-Some of you will. <span v-mark.circle.green>Most</span> of you won't.
 
 ---
 layout: two-cols
@@ -83,10 +77,10 @@ glowSeed: 2002
 
 <v-clicks>
 
-- 🌍 Huge Market. Competition for our "skill set" is relatively low.
-- 🤩 Still get to do cool stuff. Might not be so cutting edge.
-- 💵 Higher pay.
-- 📍 You get to pick the location.
+- ## 🌍 Huge Market.
+- ## 🤩 Still get to do cool stuff. Might not be so cutting edge.
+- ## 💵 Higher pay.
+- ## 📍 You get to pick the location.
 
 </v-clicks>
 
@@ -98,7 +92,7 @@ glowSeed: 1223
 image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dryden.jpg
 ---
 
-# Jobs that Does not exists yet
+# Jobs that does not exists yet
 
 - Calculator/Computer was an actual job title.
 - Youtuber/Influencer does not exist 20 years ago.
@@ -108,13 +102,25 @@ image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dry
   - DBA → Data Engineer → ML Engineer → AI Engineer -> ...
 
 ---
+layout: fact
+---
+
+# Publish X papers a year.
+Some of you will. <span v-mark.circle.green>Most</span> of you won't.
+
+
+---
 layout: center
 glowSeed: 223
 ---
 
 # Why did we study Physics/Math/Biology etc.?
-# Because it's easy...right? {.view-transition-easy}
 
+<v-click>
+
+# Because it's easy...right?
+
+</v-click>
 ---
 layout: center
 glowSeed: 20002
@@ -385,7 +391,7 @@ graph TD
 
 # Let us reason
 
-$$
+$$ {0|1|2|3|4|none}
 \begin{align*}
 PCR &= \frac{n}{m} + m \times \text{\# group positive} \\
 E[PCR] &= E \left[ \frac{n}{m} \right] + m \times E\left[ \text{\# of group positive} \right]\\
@@ -393,15 +399,20 @@ E[PCR] &= E \left[ \frac{n}{m} \right] + m \times E\left[ \text{\# of group posi
 &=  \frac{n}{m} + \underbrace{n \times (1- (1-p)^m)}_{n \times (1-P(\text{everyone negative}))} \\
 \end{align*}
 $$
-<div v-mark.circle.green>
+
+
+<div v-click v-mark.circle.green>
 
 $$
 E[PCR] = \frac{n}{m} + n \times (1- (1-p)^m)
 $$
 </div>
 
+<v-after>
+  
 - Number of PCR tests is a function of group size $m$.
 
+</v-after>
 ---
 layout: center
 glowSeed: 12345633
@@ -423,15 +434,10 @@ $$
 $$
 \frac{d}{dm}E[PCR] = -\frac{n}{m^2} + n \times p = 0
 $$
-</v-clicks>
-
-<span v-click v-mark.circle.green>
-
 $$
 m = \sqrt{\frac{1}{p}}
 $$
-
-</span>
+</v-clicks>
 
 ---
 layout: fact
