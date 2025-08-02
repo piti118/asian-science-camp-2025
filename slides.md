@@ -60,6 +60,12 @@ glowSeed: 10
 
 <img src="/non_academia_percentage.png">
 
+---
+layout: fact
+---
+
+# Publish X papers a year.
+Some of you will. <span v-mark.circle.green>Most</span> of you won't.
 
 ---
 layout: two-cols
@@ -98,8 +104,6 @@ glowSeed: 2002
 
 </v-clicks>
 
-
-
 ---
 layout: image-right
 glowSeed: 1223
@@ -114,14 +118,6 @@ image: https://upload.wikimedia.org/wikipedia/commons/0/06/Human_computers_-_Dry
 - Some will keep getting renamed with the same underlying skill set.
   - Operation Research → Financial Engineer → Data Scientist → Some other fancy names
   - DBA → Data Engineer → ML Engineer → AI Engineer -> ...
-
----
-layout: fact
----
-
-# Publish X papers a year.
-Some of you will. <span v-mark.circle.green>Most</span> of you won't.
-
 
 ---
 layout: center
