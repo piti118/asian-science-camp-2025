@@ -615,6 +615,24 @@ You can learn them on your own. It's now easier than ever.
 </v-click>
 
 ---
+layout: fact
+glowSeed: 38493
+---
+## I didn't tell you the whole truth about my background.
+
+### I told you I studied Physics. {v-click}
+
+<v-click>Physics</v-click> <v-click>, Mathematics</v-click> <v-click>,Computer Science</v-click> <v-click>Finance</v-click>
+
+::br
+
+<v-click>Now I ended up doing mostly management.</v-click>
+
+:: br 
+
+<v-click>Still get to do <u>cool stuff</u> and make the world a better place.</v-click>
+
+---
 layout: intro
 glowSeed: 12345673
 ---
@@ -628,6 +646,8 @@ glowSeed: 12345673
 - 🚀 Keep Moving+Improving. The world changes rapidly.
 
 </v-clicks>
+
+
 
 
 ---
