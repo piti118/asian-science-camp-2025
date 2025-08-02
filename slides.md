@@ -20,10 +20,24 @@ seoMeta:
   ogImage: auto
   # ogImage: https://cover.sli.dev
 layout: intro
+overviewSnapshots: true
 ---
 
 # Where Science 🔬 Can Take You
 Piti Ongmongkolkul
+
+---
+layout: center
+glowSeed: 123411
+---
+
+# About Me
+- 🧑‍🔬 Physicist by training. 🎮 Gamer at heart.
+- 👨‍🏫 Lecturer at Mahidol University International College for 10+ years.
+- 🏢 Co-founder and Chief Research Scientist at The Gang Technology Co., Ltd.
+  - A small 100 people software company.
+- 🛒 Co-founder of Smart Retail Solutions.
+  - A B2B platform for Wholesale and Retail focusing on FMCG.
 
 ---
 layout: fact
