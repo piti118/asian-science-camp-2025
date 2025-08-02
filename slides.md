@@ -46,6 +46,13 @@ glowSeed: 2ddddd
 
 # What to do after you have a bachelor degree 🎓 in science?
 
+---
+layout: fact
+---
+
+# Publish X papers a year.
+Some of you will. <span v-mark.circle.green>Most</span> of you won't.
+
 --- 
 layout: center
 glowSeed: 3
@@ -59,13 +66,6 @@ glowSeed: 10
 ---
 
 <img src="/non_academia_percentage.png">
-
----
-layout: fact
----
-
-# Publish X papers a year.
-Some of you will. <span v-mark.circle.green>Most</span> of you won't.
 
 ---
 layout: two-cols
